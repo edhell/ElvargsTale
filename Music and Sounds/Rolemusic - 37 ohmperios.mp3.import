@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Rolemusic - 37 ohmperios.mp3-75d216f5d3876440708ce57038cc5080.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/Rolemusic - 37 ohmperios.mp3"
+dest_files=[ "res://.import/Rolemusic - 37 ohmperios.mp3-75d216f5d3876440708ce57038cc5080.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
