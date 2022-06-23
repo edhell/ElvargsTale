@@ -26,18 +26,15 @@ color = Color( 0, 0, 0, 1 )
 script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-margin_top = 200.0
+margin_top = -746.45
 margin_right = 320.0
-margin_bottom = 1831.01
+margin_bottom = 884.56
 custom_colors/font_color = Color( 1, 0.996078, 0.996078, 1 )
 custom_colors/font_color_shadow = Color( 0.278431, 0.254902, 0.533333, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "CREDITS"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Credits = SubResource( 1 )

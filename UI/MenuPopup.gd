@@ -35,7 +35,7 @@ func resume_restart_quit():
 			# Resume game
 			if not already_paused:
 				get_tree().paused = false
-			$Save/Label.text      = "SAVE"
+			$Save/Label.text      = "SAVAR"
 			hide()
 
 		1:
@@ -46,7 +46,7 @@ func resume_restart_quit():
 		2:
 			#Save game
 			Global.save_game()
-			$Save/Label.text      = "SAVED"
+			$Save/Label.text      = "SALVO"
 
 		3:
 			#Load game
@@ -81,7 +81,7 @@ func _input(_event):
 			# Resume game
 			if not already_paused:
 				get_tree().paused = false
-			$Save/Label.text      = "SAVE"
+			$Save/Label.text      = "SALVAR"
 			hide()
 		if Input.is_action_just_pressed("ui_down"):
 			selected_menu = (selected_menu + 1) % 7;

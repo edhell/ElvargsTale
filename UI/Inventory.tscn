@@ -21,28 +21,28 @@
 [ext_resource path="res://UI/Inventory.gd" type="Script" id=19]
 [ext_resource path="res://UI/Map.gd" type="Script" id=20]
 
-[sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 18 )
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 18 )
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 3 )
 region = Rect2( 48, 0, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 18 )
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 3 )
 region = Rect2( 96, 0, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 18 )
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 3 )
 region = Rect2( 144, 0, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 18 )
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 3 )
 region = Rect2( 192, 0, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 18 )
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 3 )
 region = Rect2( 240, 0, 48, 48 )
 
 [sub_resource type="AtlasTexture" id=1]
@@ -69,6 +69,10 @@ region = Rect2( 192, 0, 48, 48 )
 atlas = ExtResource( 4 )
 region = Rect2( 240, 0, 48, 48 )
 
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 32, 16 )
+
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 17 )
 region = Rect2( 0, 0, 48, 48 )
@@ -93,43 +97,39 @@ region = Rect2( 192, 0, 48, 48 )
 atlas = ExtResource( 17 )
 region = Rect2( 240, 0, 48, 48 )
 
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 18 )
+region = Rect2( 0, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 18 )
+region = Rect2( 48, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 18 )
+region = Rect2( 96, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 18 )
+region = Rect2( 144, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 18 )
+region = Rect2( 192, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 18 )
+region = Rect2( 240, 0, 48, 48 )
+
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 10 )
 region = Rect2( 0, 0, 32, 16 )
 
-[sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=22]
-atlas = ExtResource( 3 )
-region = Rect2( 48, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 3 )
-region = Rect2( 96, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 3 )
-region = Rect2( 144, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 3 )
-region = Rect2( 192, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=26]
-atlas = ExtResource( 3 )
-region = Rect2( 240, 0, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 12 )
-region = Rect2( 0, 0, 32, 16 )
-
 [sub_resource type="SpriteFrames" id=27]
 animations = [ {
-"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
 "loop": true,
-"name": "Lyu",
+"name": "Unarmed",
 "speed": 6.0
 }, {
 "frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
@@ -137,25 +137,25 @@ animations = [ {
 "name": "Ledi",
 "speed": 6.0
 }, {
+"frames": [ SubResource( 7 ) ],
+"loop": true,
+"name": "Pickaxe",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
 "loop": true,
 "name": "Legan",
+"speed": 6.0
+}, {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "Lyu",
 "speed": 6.0
 }, {
 "frames": [ SubResource( 8 ) ],
 "loop": true,
 "name": "Axe",
 "speed": 1.0
-}, {
-"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
-"loop": true,
-"name": "Unarmed",
-"speed": 6.0
-}, {
-"frames": [ SubResource( 7 ) ],
-"loop": true,
-"name": "Pickaxe",
-"speed": 5.0
 } ]
 
 [sub_resource type="Animation" id=28]
@@ -243,9 +243,6 @@ pause_mode = 2
 margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 19 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Fade" type="ColorRect" parent="."]
 margin_right = 320.0
@@ -283,12 +280,9 @@ margin_bottom = 32.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.392157, 0.392157, 0.392157, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "Inventory"
+text = "Inventário"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Item" type="Label" parent="Background"]
 margin_top = 112.0
@@ -297,7 +291,7 @@ margin_bottom = 133.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.392157, 0.392157, 0.392157, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "- Item description -"
+text = "- Descrição -"
 align = 1
 valign = 1
 __meta__ = {
@@ -328,7 +322,6 @@ __meta__ = {
 position = Vector2( 20, 24 )
 frames = SubResource( 27 )
 animation = "Unarmed"
-frame = 5
 playing = true
 
 [node name="Label" type="Label" parent="Player"]
@@ -339,12 +332,9 @@ margin_bottom = 64.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.27451, 0.27451, 0.27451, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "Lango"
+text = "Elvarg"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Box1" type="ColorRect" parent="."]
 margin_left = 72.0
@@ -660,9 +650,6 @@ margin_top = 2.0
 margin_right = 30.0
 margin_bottom = 30.0
 color = Color( 0.980392, 0.941176, 0.627451, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Item" type="Node2D" parent="Box10"]
 

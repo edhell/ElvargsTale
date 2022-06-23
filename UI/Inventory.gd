@@ -123,7 +123,7 @@ func change_menu_color():
 		0:
 			$Box1/ColorRect.color = Color("#37ff37")
 			if $Box1/Map.visible == true:
-				$Background/Item.text = "Map"
+				$Background/Item.text = "Mapa"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Cacilda
@@ -137,28 +137,28 @@ func change_menu_color():
 		2:
 			$Box3/ColorRect.color = Color("#37ff37")
 			if $Box3/Axe.visible == true:
-				$Background/Item.text = "Axe"
+				$Background/Item.text = "Machado"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Wood
 		3:
 			$Box4/ColorRect.color = Color("#37ff37")
 			if $Box4/Item.visible == true:
-				$Background/Item.text = "Wood"
+				$Background/Item.text = "Madeira"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Hpotion
 		4:
 			$Box5/ColorRect.color = Color("#37ff37")
 			if $Box5/Item.visible == true:
-				$Background/Item.text = "Health Potion"
+				$Background/Item.text = "Poção de vida"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Rpotion
 		5:
 			$Box6/ColorRect.color = Color("#37ff37")
 			if $Box6/Item.visible == true:
-				$Background/Item.text = "Repellent Potion"
+				$Background/Item.text = "Repelente"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Bandana
@@ -172,35 +172,35 @@ func change_menu_color():
 		7:
 			$Box8/ColorRect.color = Color("#37ff37")
 			if $Box8/Saber.visible == true:
-				$Background/Item.text = "Swon's Saber"
+				$Background/Item.text = "Espada Swon"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Pickaxe
 		8:
 			$Box9/ColorRect.color = Color("#37ff37")
 			if $Box9/Pickaxe.visible == true:
-				$Background/Item.text = "Pickaxe"
+				$Background/Item.text = "Picareta"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Stone
 		9:
 			$Box10/ColorRect.color = Color("#37ff37")
 			if $Box10/Item.visible == true:
-				$Background/Item.text = "Stone"
+				$Background/Item.text = "Pedra"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Mpotion
 		10:
 			$Box11/ColorRect.color = Color("#37ff37")
 			if $Box11/Item.visible == true:
-				$Background/Item.text = "Mana Potion"
+				$Background/Item.text = "Poção de Mana"
 			else:
 				$Background/Item.text = ""
 #____________________________________________________ Bomb
 		11:
 			$Box12/ColorRect.color = Color("#37ff37")
 			if $Box12/Item.visible == true:
-				$Background/Item.text = "Bomb"
+				$Background/Item.text = "Bomba"
 			else:
 				$Background/Item.text = ""
 
@@ -225,7 +225,7 @@ func _use_item():
 			if $Box2/Cacilda.visible == true:
 				if $Player/Player.animation == "Legan":
 					$Player/Player.animation = "Unarmed"
-					$Player/Label.text = "Lango"
+					$Player/Label.text = "Elvarg"
 					emit_signal("transform_Player")
 					_equipped_color()
 				else:
@@ -245,7 +245,7 @@ func _use_item():
 				else:
 					_equipped_color()
 					$Player/Player.animation = "Axe"
-					$Player/Label.text = "Lango"
+					$Player/Label.text = "Elvarg"
 					if Global.player != "Player":
 						emit_signal("transform_Player")
 					$Box3.color = Color.red
@@ -253,7 +253,7 @@ func _use_item():
 					Global.pickaxe_equipped = false
 #________________________________________________________ Wood
 		3:
-			print("Wood - it's just a quest item")
+			print("Madeira - item usado para construção e missões.")
 #________________________________________________________ Hpotion
 		4:
 			if $Box5/Item.visible == true:
@@ -274,7 +274,7 @@ func _use_item():
 			if $Box7/Bandana.visible == true:
 				if $Player/Player.animation == "Lyu":
 					$Player/Player.animation = "Unarmed"
-					$Player/Label.text = "Lango"
+					$Player/Label.text = "Elvarg"
 					emit_signal("transform_Player")
 					_equipped_color()
 				else:
@@ -291,7 +291,7 @@ func _use_item():
 			if $Box8/Saber.visible == true:
 				if $Player/Player.animation == "Ledi":
 					$Player/Player.animation = "Unarmed"
-					$Player/Label.text = "Lango"
+					$Player/Label.text = "Elvarg"
 					emit_signal("transform_Player")
 					_equipped_color()
 				else:
@@ -311,7 +311,7 @@ func _use_item():
 				else:
 					_equipped_color()
 					$Player/Player.animation = "Pickaxe"
-					$Player/Label.text = "Lango"
+					$Player/Label.text = "Elvarg"
 					if Global.player != "Player":
 						emit_signal("transform_Player")
 					$Box9.color = Color.red
@@ -319,7 +319,7 @@ func _use_item():
 					Global.axe_equipped = false
 #_______________________________________________________ Stones
 		9:
-			print("Stones - It's just a quest item")
+			print("Pedra - item usado para construção e missões.")
 #_______________________________________________________ Mpotion
 		10:
 			if $Box11/Item.visible == true:

@@ -7,25 +7,25 @@ func _show_name():
 
 func _ready():
 	if get_parent().name == "Level1":
-		$Label.text = "Backyard of Lango"
+		$Label.text = "Quintal do Elvarg"
 		_show_name()
 	elif get_parent().name == "Level2":
-		$Label.text = "Backyard of Bearnardo"
+		$Label.text = "Quintal do Vargel"
 		_show_name()
 	elif get_parent().name == "Level3":
-		$Label.text = "Bees' Forest"
+		$Label.text = "Floresta das abelhas"
 		_show_name()
 	elif get_parent().name == "Level4":
-		$Label.text = "Backyard of Polar"
+		$Label.text = "Quintal Geladinho"
 		_show_name()
 	elif get_parent().name == "Level5":
-		$Label.text = "Panda’s Forest"
+		$Label.text = "Floresta de OakVille"
 		_show_name()
 	elif get_parent().name == "CaveLevel1":
-		$Label.text = "Bat Cave"
+		$Label.text = "Caverna dos morcegos"
 		_show_name()
 	elif get_parent().name == "CaveLevel2":
-		$Label.text = "Lost Cave"
+		$Label.text = "Caverna dos perdidos"
 		_show_name()
 	elif get_parent().name == "Dangeon1":
 		$Label.text = "Cave of Madness 1"
@@ -49,5 +49,5 @@ func _ready():
 		$Label.text = "Cave of Treasures"
 		_show_name()
 	elif get_parent().name == "Boss":
-		$Label.text = "Boss"
+		$Label.text = "Chefão"
 		_show_name()

@@ -1,249 +1,235 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Font/Avenixel/Avenixel-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Intro/Icon.png" type="Texture" id=2]
 [ext_resource path="res://Font/Font.tres" type="DynamicFont" id=3]
 [ext_resource path="res://UI/arrow.png" type="Texture" id=4]
 [ext_resource path="res://UI/Intro.gd" type="Script" id=5]
-[ext_resource path="res://UI/Lango.png" type="Texture" id=6]
-[ext_resource path="res://Intro/hb.png" type="Texture" id=7]
-[ext_resource path="res://Intro/dp.png" type="Texture" id=8]
-[ext_resource path="res://Intro/delta12.png" type="Texture" id=9]
-[ext_resource path="res://Music and Sounds/Lango_Mackup_theme.ogg" type="AudioStream" id=10]
-[ext_resource path="res://Intro/drlogo.png" type="Texture" id=11]
+[ext_resource path="res://Music and Sounds/HoliznaCC0_-_Day_Dreams.mp3" type="AudioStream" id=7]
+[ext_resource path="res://UI/Unisc.jpg" type="Texture" id=8]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Intro"
-length = 35.0
+length = 40.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("Created:percent_visible")
+tracks/0/path = NodePath("Criado com Godot:percent_visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 4.8, 6.2, 9.2, 9.3 ),
+"times": PoolRealArray( 0, 1.9, 2.2, 3.9, 4.1 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, 0.0, 1.0, 1.0, 0.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Icon:modulate")
+tracks/1/path = NodePath("Criado com Godot/Icon:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 6.4, 7.2, 8.1, 8.3, 8.5, 9.2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0.4, 3.4, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 0, 0, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Godot:visible")
+tracks/2/path = NodePath("Criado com Godot/Icon:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 6.8, 9.2 ),
+"times": PoolRealArray( 0, 2.2, 4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Icon:visible")
+tracks/3/path = NodePath("Controles_Text:percent_visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 6.4, 9.2 ),
+"times": PoolRealArray( 0, 3.6, 5.2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
-"values": [ false, true, false ]
+"update": 0,
+"values": [ 0.0, 0.0, 1.0 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Text:percent_visible")
+tracks/4/path = NodePath("Controles_Text/Controles WASD:percent_visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 20.6, 24.6 ),
+"times": PoolRealArray( 0, 4.1, 5.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, 0.0, 1.0 ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("WASD:percent_visible")
+tracks/5/path = NodePath("Arrows:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 22, 23.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 0.0, 0.0, 1.0 ]
+"times": PoolRealArray( -1.1, 0.1, 4.4, 8.1, 30 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, false, true, false, false ]
 }
-tracks/6/type = "value"
-tracks/6/path = NodePath("Arrows:visible")
+tracks/6/type = "audio"
+tracks/6/path = NodePath("Intro")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 22, 30 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
-"values": [ false, true, false ]
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 7 )
+} ],
+"times": PoolRealArray( 1.7 )
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Lango:modulate")
+tracks/7/path = NodePath("Controles_Text:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
+"times": PoolRealArray( 0, 8.1, 30 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+"update": 1,
+"values": [ true, false, false ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("Thanks:percent_visible")
+tracks/8/path = NodePath("Controles_Text/Controles WASD:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0.1, 9.9, 14 ),
+"times": PoolRealArray( 0, 8.1, 30 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 0.0, 0.0, 1.0 ]
+"update": 1,
+"values": [ true, false, false ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("Thanks:visible")
+tracks/9/path = NodePath("Controles_Text/Controles WASD/Rolar e Ataque:text")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 10.1, 20.1 ),
+"times": PoolRealArray( 0.2, 3.3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ true, false ]
+"values": [ "Rolar = Espaço / Mouse Esq
+Atacar = Control / Mouse Dir", "Rolar = Espaço / Mouse Esq
+Atacar = Control / Mouse Dir" ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("Thanks/hb:self_modulate")
+tracks/10/path = NodePath("Controles_Text/Controles WASD/Rolar e Ataque:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0, 12.4, 12.9 ),
+"times": PoolRealArray( -0.1, 5.8, 8.1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"update": 1,
+"values": [ false, true, false ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("Thanks/dp:self_modulate")
+tracks/11/path = NodePath("Alunos:percent_visible")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 0, 13, 13.5 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( -0.1, 8.6, 11.2, 12.5, 13 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ 0.0, 0.0, 1.0, 1.0, 0.0 ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath("delta12:self_modulate")
+tracks/12/path = NodePath("Controles_Text/Controles WASD/Rolar e Ataque:percent_visible")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0, 3.3, 3.7, 4.2, 4.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( -0.1, 5.7, 6.8, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+"values": [ 1.0, 0.0, 1.0, 1.0 ]
 }
-tracks/13/type = "audio"
-tracks/13/path = NodePath("Intro")
+tracks/13/type = "value"
+tracks/13/path = NodePath("História Inicial:percent_visible")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"clips": [ {
-"end_offset": 0.0,
-"start_offset": 0.0,
-"stream": ExtResource( 10 )
-} ],
-"times": PoolRealArray( 2.3 )
+"times": PoolRealArray( 13.2, 17.2, 20.2, 21.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("drlogo:visible")
+tracks/14/path = NodePath("História Inicial/História Continuacao:percent_visible")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0.1, 30.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ false, true ]
+"times": PoolRealArray( 21.2, 24.5, 30.1, 30.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
 }
 tracks/15/type = "value"
-tracks/15/path = NodePath("Text:visible")
+tracks/15/path = NodePath("História Inicial/História Continuacao2:percent_visible")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"times": PoolRealArray( 0, 30 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ true, false ]
+"times": PoolRealArray( 30.7, 34.4, 39.3, 39.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0, 0.0 ]
 }
 tracks/16/type = "value"
-tracks/16/path = NodePath("WASD:visible")
+tracks/16/path = NodePath("LOGO UNISC:visible")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
 tracks/16/enabled = true
 tracks/16/keys = {
-"times": PoolRealArray( 0, 30 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true, false ]
+"values": [ true ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath("Music:visible")
+tracks/17/path = NodePath("LOGO UNISC:modulate")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
 tracks/17/enabled = true
 tracks/17/keys = {
-"times": PoolRealArray( 0, 30 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ false, true ]
-}
-tracks/18/type = "value"
-tracks/18/path = NodePath("DR:visible")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/keys = {
-"times": PoolRealArray( 0, 31.2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ false, true ]
+"times": PoolRealArray( -0.1, 1.2, 2.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
 [sub_resource type="DynamicFont" id=2]
@@ -255,94 +241,49 @@ margin_right = 320.0
 margin_bottom = 180.0
 color = Color( 0, 0, 0, 1 )
 script = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Intro"
 anims/Intro = SubResource( 1 )
 
-[node name="Lango" type="Sprite" parent="."]
+[node name="LOGO UNISC" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-texture = ExtResource( 6 )
-centered = false
+position = Vector2( 159, 90 )
+scale = Vector2( 0.388462, 0.38055 )
+texture = ExtResource( 8 )
 
-[node name="Icon" type="Sprite" parent="."]
-visible = false
-modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 160, 64 )
-texture = ExtResource( 2 )
-
-[node name="Created" type="Label" parent="."]
+[node name="Criado com Godot" type="Label" parent="."]
 margin_top = 104.0
 margin_right = 320.0
 margin_bottom = 136.0
 custom_colors/font_color = Color( 0.368627, 0.533333, 0.658824, 1 )
 custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 2 )
-text = "CREATED"
+text = "Criado com Godot Engine"
 align = 1
 valign = 1
 percent_visible = 0.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Godot" type="Label" parent="."]
+[node name="Icon" type="Sprite" parent="Criado com Godot"]
 visible = false
-margin_top = 128.0
-margin_right = 320.0
-margin_bottom = 160.0
-custom_colors/font_color = Color( 0.368627, 0.533333, 0.658824, 1 )
-custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
-custom_fonts/font = SubResource( 2 )
-text = "Godot Engine"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 160, -40 )
+texture = ExtResource( 2 )
 
-[node name="Thanks" type="Label" parent="."]
+[node name="Controles_Text" type="Label" parent="."]
 visible = false
 margin_left = 4.0
-margin_top = 9.0
-margin_right = 317.0
-margin_bottom = 177.0
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_fonts/font = ExtResource( 3 )
-text = "THANKS"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="hb" type="Sprite" parent="Thanks"]
-position = Vector2( 55.7567, 103.524 )
-scale = Vector2( 0.416226, 0.416226 )
-texture = ExtResource( 7 )
-
-[node name="dp" type="Sprite" parent="Thanks"]
-position = Vector2( 210.412, 103.17 )
-scale = Vector2( 0.831641, 0.831641 )
-texture = ExtResource( 8 )
-
-[node name="Text" type="Label" parent="."]
-visible = false
-margin_right = 320.0
+margin_right = 324.0
 margin_bottom = 180.0
 custom_fonts/font = ExtResource( 3 )
-text = "INTRO"
+text = "Controles"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="WASD" type="Label" parent="."]
+[node name="Controles WASD" type="Label" parent="Controles_Text"]
 visible = false
+margin_left = -4.0
 margin_top = 69.0
-margin_right = 320.0
+margin_right = 316.0
 margin_bottom = 101.0
 custom_fonts/font = ExtResource( 3 )
 text = "            W           A           S            D"
@@ -351,30 +292,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Music" type="Label" parent="."]
-margin_top = 24.0
-margin_right = 320.0
-margin_bottom = 180.0
+[node name="Rolar e Ataque" type="Label" parent="Controles_Text/Controles WASD"]
+visible = false
+margin_left = 12.0
+margin_top = 42.0
+margin_right = 332.0
+margin_bottom = 77.0
 custom_fonts/font = ExtResource( 3 )
-text = "Music by"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="DR" type="Label" parent="."]
-margin_top = 128.0
-margin_right = 213.0
-margin_bottom = 160.0
-rect_scale = Vector2( 1.5, 1.5 )
-custom_colors/font_color = Color( 0.890196, 0, 0, 1 )
-custom_colors/font_color_shadow = Color( 0.3125, 0, 0, 1 )
-custom_fonts/font = ExtResource( 3 )
-text = "Dark Reaven Music"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+text = "Rolar = Espaço / Mouse Esq
+Atacar = Control / Mouse Dir"
+valign = 1
 
 [node name="Arrows" type="YSort" parent="."]
 visible = false
@@ -398,18 +325,72 @@ position = Vector2( 256.5, 57.5 )
 rotation = 1.5708
 texture = ExtResource( 4 )
 
-[node name="delta12" type="Sprite" parent="."]
-self_modulate = Color( 1, 1, 1, 0 )
-texture = ExtResource( 9 )
-centered = false
+[node name="Alunos" type="Label" parent="."]
+margin_left = 12.0
+margin_top = 13.0
+margin_right = 332.0
+margin_bottom = 48.0
+custom_fonts/font = ExtResource( 3 )
+text = "Alunos:
 
-[node name="drlogo" type="Sprite" parent="."]
-position = Vector2( 160, 91.9999 )
-scale = Vector2( 0.1075, 0.1075 )
-texture = ExtResource( 11 )
+Cauê Rathke
+Cristiano Eckel
+Eduardo Dumke
+Kelvin Alves
+Mauricio Wendler"
+valign = 1
+percent_visible = 0.0
 
 [node name="Intro" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 10 )
-volume_db = -30.0
+stream = ExtResource( 7 )
+volume_db = -10.0
+
+[node name="História Inicial" type="Label" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+custom_fonts/font = ExtResource( 3 )
+text = "Este jogo se inicia em uma fazenda
+longe de tudo e todos 
+e conta a história de ”Elvarg” e sua família.
+
+Eram simples e sem nenhuma posse, 
+todos tem que plantar, caçar
+e se defender de monstros e bandidos.
+
+Mas a vida dessa família nem sempre foi assim..."
+align = 1
+valign = 1
+percent_visible = 0.0
+
+[node name="História Continuacao" type="Label" parent="História Inicial"]
+margin_right = 320.0
+margin_bottom = 180.0
+custom_fonts/font = ExtResource( 3 )
+text = "Existia um tempo, quando Elvarg era 
+muito pequeno, em que eram todos ricos 
+e tinham sua própria vila chamada de Oakville,
+ próspera e cheia de pessoas, bens e recursos.
+
+Mas certo dia foram atacados por monstros 
+e bandidos, que levaram consigo os bens 
+mais preciosos da vila."
+align = 1
+valign = 1
+percent_visible = 0.0
+
+[node name="História Continuacao2" type="Label" parent="História Inicial"]
+margin_right = 320.0
+margin_bottom = 180.0
+custom_fonts/font = ExtResource( 3 )
+text = "Elvarg sempre ouvindo as histórias de sua 
+antiga vila, sempre sonhava em fazer a diferença
+
+Certo dia, depois da fazenda ser atacada,
+decidiu sair para reaver sua antiga vila.
+
+A sua missão é recuperar todos os itens."
+align = 1
+valign = 1
+percent_visible = 0.0
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

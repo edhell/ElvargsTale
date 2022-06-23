@@ -63,9 +63,6 @@ __meta__ = {
 margin_right = 320.0
 margin_bottom = 180.0
 color = Color( 0, 0, 0, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="New" type="ColorRect" parent="."]
 margin_left = 96.0
@@ -74,8 +71,7 @@ margin_right = 224.0
 margin_bottom = 56.0
 color = Color( 0.588235, 0.588235, 0.588235, 1 )
 __meta__ = {
-"_edit_group_": true,
-"_edit_use_anchors_": false
+"_edit_group_": true
 }
 
 [node name="Label" type="Label" parent="New"]
@@ -84,7 +80,7 @@ margin_bottom = 24.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "New Game"
+text = "Novo Jogo"
 align = 1
 valign = 1
 __meta__ = {
@@ -108,7 +104,7 @@ margin_bottom = 24.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "Load Game"
+text = "Continuar"
 align = 1
 valign = 1
 __meta__ = {
@@ -132,9 +128,6 @@ margin_bottom = 24.0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "Quit Game"
+text = "SAIR"
 align = 1
 valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
