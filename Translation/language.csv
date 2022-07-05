@@ -110,7 +110,7 @@ QS ST DS2 A,[ATAQUE] Thank you so much!,[ATAQUE] Valeu mano!,[ATAQUE] ¡Muchas g
 QS ST DS3 D,Watch out for the bees!,Cuidado com as abelhas!,¡Cuidado con las abejas! 
 QS ST DS3 A,"[ATAQUE] OK, I'll be back later!",[ATAQUE] Ok! Eu volto mais tarde!,[ATAQUE] ¡Está bien!
 HOUSE,Elvarg's House,Casa do Elvarg,Casa de Elvarg 
-NPC HOUSE,Bearnardo's House,Casa do Bearnardo,Casa de Bearnardo 
+NPC HOUSE,Vargel's House,Casa do Vargel,Casa de Vargel 
 RESUME,RESUME,RESUMIR,REGRESAR
 RESTART,RESTART,RECOMEÇAR,REANUDAR 
 QUIT,QUIT,SAIR,DEJAR 
@@ -161,12 +161,12 @@ A melhor loja de toda Elvarg Island!","¡Bienvenido a Polar Shop!
 ¡La mejor tienda de toda la Elvarg Island!"
 Inventory,Inventory,Inventário,Inventario
 Backyard of Elvarg,Backyard of Elvarg,Quintal do Elvarg,Patio de Elvarg
-Backyard of Bearnardo,Backyard of Bearnardo,Quintal do Bearnardo,Patio de Bearnardo
+Backyard of Vargel,Backyard of Vargel,Quintal do Vargel,Patio de Vargel
 Bees' Forest,Bees' Forest,Bosque das Abelhas,Bosque de las abejas
 Backyard of Polar,Backyard of Polar,Quintal do Polar,Patio de Polar
 Panda’s Forest,Panda’s Forest,Floresta do Panda,Bosque del Panda
 Elvarg's House,Elvarg's House,Casa do Elvarg,Casa de Elvarg 
-Bearnardo’s House,Bearnardo’s House,Casa do Bearnardo,Casa de Bearnardo 
+Vargel’s House,Vargel’s House,Casa do Vargel,Casa de Vargel 
 Too dark to read the map,Too dark to read the map,Muito escuro para ler o mapa,Demasiado oscuro para leer el mapa
 Bat Cave,Bat Cave,Caverna dos morcegos,Cueva de murciélagos
 Lost Cave,Lost Cave,Caverna Perdida,Cueva Perdida
