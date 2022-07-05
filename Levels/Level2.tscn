@@ -1010,7 +1010,7 @@ remote_path = NodePath("../../../Camera2D")
 [node name="Trees" type="YSort" parent="YSort"]
 
 [node name="Tree" parent="YSort/Trees" instance=ExtResource( 1 )]
-position = Vector2( 240, 32 )
+position = Vector2( 265, 76 )
 
 [node name="Tree2" parent="YSort/Trees" instance=ExtResource( 1 )]
 position = Vector2( 48.5472, 168 )
@@ -1050,7 +1050,7 @@ position = Vector2( 560, 296 )
 position = Vector2( 336, 281 )
 
 [node name="Bee5" parent="YSort/Bees" instance=ExtResource( 3 )]
-position = Vector2( 128, 318.053 )
+position = Vector2( 133, 316 )
 
 [node name="Bee6" parent="YSort/Bees" instance=ExtResource( 3 )]
 position = Vector2( 224, 180 )
@@ -1059,7 +1059,7 @@ position = Vector2( 224, 180 )
 position = Vector2( 424, 176 )
 
 [node name="Bee8" parent="YSort/Bees" instance=ExtResource( 3 )]
-position = Vector2( 304.056, 123.501 )
+position = Vector2( 295, 122 )
 
 [node name="Bee2" parent="YSort/Bees" instance=ExtResource( 3 )]
 position = Vector2( 48, 144 )
@@ -1067,7 +1067,7 @@ position = Vector2( 48, 144 )
 [node name="Grass" type="YSort" parent="YSort"]
 
 [node name="Grass" parent="YSort/Grass" instance=ExtResource( 4 )]
-position = Vector2( 80, 306 )
+position = Vector2( 88, 306 )
 
 [node name="Grass2" parent="YSort/Grass" instance=ExtResource( 4 )]
 position = Vector2( 48.5472, 48 )
@@ -1079,19 +1079,19 @@ position = Vector2( 48, 79.501 )
 position = Vector2( 48.5472, 112 )
 
 [node name="Grass10" parent="YSort/Grass" instance=ExtResource( 4 )]
-position = Vector2( 48.5472, 208 )
+position = Vector2( 57, 208 )
 
 [node name="Grass11" parent="YSort/Grass" instance=ExtResource( 4 )]
 position = Vector2( 112, 336 )
 
 [node name="Grass12" parent="YSort/Grass" instance=ExtResource( 4 )]
-position = Vector2( 145.357, 336 )
+position = Vector2( 151, 336 )
 
 [node name="Grass13" parent="YSort/Grass" instance=ExtResource( 4 )]
 position = Vector2( 176, 336 )
 
 [node name="Grass14" parent="YSort/Grass" instance=ExtResource( 4 )]
-position = Vector2( 208, 336 )
+position = Vector2( 209, 328 )
 
 [node name="Grass5" parent="YSort/Grass" instance=ExtResource( 4 )]
 position = Vector2( 464, 46 )
@@ -1135,14 +1135,14 @@ position = Vector2( 304.056, -2 )
 [node name="NPCInsideHousePos" type="Position2D" parent="."]
 position = Vector2( 143, 128 )
 
-[node name="Level3" parent="." instance=ExtResource( 13 )]
+[node name="Level2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 657, 272 )
 rotation = 1.5708
 
 [node name="CaveLevel2Pos" type="Position2D" parent="."]
 position = Vector2( 496, 50.1307 )
 
-[node name="Level3Pos" type="Position2D" parent="."]
+[node name="Level2Pos" type="Position2D" parent="."]
 position = Vector2( 649, 272 )
 
 [editable path="Sign"]
