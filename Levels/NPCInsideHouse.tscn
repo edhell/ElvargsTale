@@ -113,9 +113,9 @@ __meta__ = {
 [node name="Label" type="Label" parent="DialoguePopup/NPCName"]
 margin_right = 80.0
 margin_bottom = 16.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.27451, 0.27451, 0.27451, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "Bearnardo"
 align = 1
 valign = 1
@@ -146,9 +146,9 @@ __meta__ = {
 [node name="Label" type="Label" parent="DialoguePopup/Dialogue"]
 margin_right = 168.0
 margin_bottom = 80.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.27451, 0.27451, 0.27451, 1 )
+custom_fonts/font = ExtResource( 6 )
 align = 1
 valign = 1
 autowrap = true
@@ -180,10 +180,10 @@ __meta__ = {
 [node name="Label" type="Label" parent="DialoguePopup/Lango"]
 margin_right = 80.0
 margin_bottom = 19.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.27451, 0.27451, 0.27451, 1 )
-text = "Lango"
+custom_fonts/font = ExtResource( 6 )
+text = "Elvarg"
 align = 1
 valign = 1
 __meta__ = {
@@ -213,9 +213,9 @@ __meta__ = {
 [node name="Label" type="Label" parent="DialoguePopup/Answer"]
 margin_right = 183.0
 margin_bottom = 32.0
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.27451, 0.27451, 0.27451, 1 )
+custom_fonts/font = ExtResource( 6 )
 align = 1
 valign = 1
 __meta__ = {
@@ -225,4 +225,5 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="DialoguePopup"]
 pause_mode = 2
 anims/ShowDialogue = SubResource( 1 )
+
 [connection signal="animation_finished" from="DialoguePopup/AnimationPlayer" to="DialoguePopup" method="_on_AnimationPlayer_animation_finished"]

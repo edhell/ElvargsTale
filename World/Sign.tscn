@@ -4,7 +4,6 @@
 [ext_resource path="res://Font/Font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://UI/Popup.gd" type="Script" id=3]
 
-
 [sub_resource type="RectangleShape2D" id=101]
 extents = Vector2( 13.3333, 5.64949 )
 
@@ -63,14 +62,15 @@ __meta__ = {
 [node name="Label" type="Label" parent="Popup/ColorRect"]
 margin_right = 96.0
 margin_bottom = 24.0
-custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.509804, 0.509804, 0.509804, 1 )
-text = "HOUSE"
+custom_fonts/font = ExtResource( 2 )
+text = "CASA"
 align = 1
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="body_entered" from="StaticBody2d/Area2D" to="Popup" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="StaticBody2d/Area2D" to="Popup" method="_on_Area2D_body_exited"]

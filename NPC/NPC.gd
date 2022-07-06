@@ -28,7 +28,7 @@ func talk(answer = ""):
 	$AnimatedSprite.play("Talk")
 	# Set dialoguePopup npc to npc
 	dialoguePopup.npc = self
-	dialoguePopup.npc_name = "Bearnardo"
+	dialoguePopup.npc_name = "Vargel"
 	
 	# Show the current dialogue
 	match Global.quest_status:

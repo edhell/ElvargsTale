@@ -148,16 +148,15 @@ anims/Stop = SubResource( 106 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
 autostart = true
+
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 [connection signal="area_exited" from="HurtBox" to="." method="_on_HurtBox_area_exited"]
-[connection signal="invincibility_ended" from="HurtBox" to="HurtBox" method="_on_HurtBox_invincibility_ended"]
 [connection signal="invincibility_ended" from="HurtBox" to="." method="_on_HurtBox_invincibility_ended"]
-[connection signal="invincibility_started" from="HurtBox" to="HurtBox" method="_on_HurtBox_invincibility_started"]
+[connection signal="invincibility_ended" from="HurtBox" to="HurtBox" method="_on_HurtBox_invincibility_ended"]
 [connection signal="invincibility_started" from="HurtBox" to="." method="_on_HurtBox_invincibility_started"]
+[connection signal="invincibility_started" from="HurtBox" to="HurtBox" method="_on_HurtBox_invincibility_started"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 [editable path="HurtBox"]
-
 [editable path="PlayerDetectionZone"]
-
 [editable path="HitBox"]

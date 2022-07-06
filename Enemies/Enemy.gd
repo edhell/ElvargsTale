@@ -10,8 +10,8 @@ onready var wanderController    = $WanderController
 onready var sprite              = $AnimatedSprite
 onready var animationPlayer     = $AnimationPlayer
 
-export var ACCELERATION         = 300
-export var MAX_SPEED            = 50
+export var ACCELERATION         = 200
+export var MAX_SPEED            = 40
 export var FRICTION             = 200
 export var WANDER_TARGET_RANGE  = 4
 export var HEALTH               = 3

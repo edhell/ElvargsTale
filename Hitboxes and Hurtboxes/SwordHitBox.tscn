@@ -49,5 +49,5 @@ visible = false
 
 [node name="Ladu" type="AnimatedSprite" parent="Unarmed/Node2d"]
 frames = SubResource( 92 )
-frame = 1
+frame = 2
 playing = true

@@ -5,7 +5,7 @@ var health           = max_health setget set_health
 var health_bar       = 0 setget set_health_bar
 
 var direction        = Vector2.ZERO
-var player           = "Player"
+var player           = "Legan"
 var visited          = ["Level1"]
 var key_founded      = []
 var opened_doors     = []

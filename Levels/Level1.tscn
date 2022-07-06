@@ -1024,16 +1024,16 @@ position = Vector2( 48, 104 )
 position = Vector2( 592, 32 )
 
 [node name="Cactus3" parent="YSort/Cactus" instance=ExtResource( 2 )]
-position = Vector2( 48, 296 )
+position = Vector2( 23, 244 )
 
 [node name="Cactus4" parent="YSort/Cactus" instance=ExtResource( 2 )]
-position = Vector2( 608, 136 )
+position = Vector2( 592, 160 )
 
 [node name="Cactus5" parent="YSort/Cactus" instance=ExtResource( 2 )]
-position = Vector2( 352, 168 )
+position = Vector2( 395, 192 )
 
 [node name="Cactus6" parent="YSort/Cactus" instance=ExtResource( 2 )]
-position = Vector2( 352, 40 )
+position = Vector2( 368, 56 )
 
 [node name="Bees" type="YSort" parent="YSort"]
 
@@ -1044,21 +1044,21 @@ position = Vector2( 256, 240 )
 position = Vector2( 536, 240 )
 
 [node name="Bee4" parent="YSort/Bees" instance=ExtResource( 4 )]
-position = Vector2( 439.313, 288 )
+position = Vector2( 387, 303 )
 
 [node name="Bee5" parent="YSort/Bees" instance=ExtResource( 4 )]
 position = Vector2( 128, 318.053 )
 
 [node name="Bee7" parent="YSort/Bees" instance=ExtResource( 4 )]
-position = Vector2( 450.313, 170.057 )
+position = Vector2( 445, 141 )
 
 [node name="Bee2" parent="YSort/Bees" instance=ExtResource( 4 )]
-position = Vector2( 56, 160 )
+position = Vector2( 74, 184 )
 
 [node name="Chests" type="YSort" parent="YSort"]
 
 [node name="Chest" parent="YSort/Chests" instance=ExtResource( 17 )]
-position = Vector2( 235, 32 )
+position = Vector2( 434, 31 )
 drop_type = 2
 
 [node name="Level2" parent="." instance=ExtResource( 14 )]

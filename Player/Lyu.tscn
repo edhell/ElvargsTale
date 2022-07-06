@@ -14,7 +14,6 @@
 [ext_resource path="res://Shadows/MediumShadow.png" type="Texture" id=13]
 [ext_resource path="res://Music and Sounds/Rock.ogg" type="AudioStream" id=14]
 
-
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 7.69131
 height = 0.477068
@@ -978,6 +977,7 @@ disabled = true
 position = Vector2( 15.026, 0 )
 frames = SubResource( 5 )
 animation = "Ladu"
+frame = 2
 playing = true
 
 [node name="Player" type="Sprite" parent="."]
@@ -1042,6 +1042,7 @@ anims/Stop = SubResource( 55 )
 [node name="Transition" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 [connection signal="invincibility_ended" from="HurtBox" to="." method="_on_HurtBox_invincibility_ended"]
 [connection signal="invincibility_ended" from="HurtBox" to="HurtBox" method="_on_HurtBox_invincibility_ended"]
@@ -1050,5 +1051,4 @@ one_shot = true
 [connection signal="timeout" from="Transition" to="." method="_on_Transition_timeout"]
 
 [editable path="HitBoxPivot/SwordHitBox"]
-
 [editable path="HurtBox"]
